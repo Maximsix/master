@@ -25,7 +25,7 @@ print(marta_name)
 
 
 # task 4
-
+# TODO: this should be in task 4
 john_gender = True
 marta_gender = False
 
@@ -137,4 +137,4 @@ print(john)
 
 
 
-
+# TODO: some module which is not needed I suppose
