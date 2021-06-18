@@ -1,7 +1,7 @@
 # task with star
 
 
-# He is bad boy and he has't friends  :(
+# He is bad boy and he doesn't have friends  :(
 william = {
     'full_name': 'William',
     'age': 22,
