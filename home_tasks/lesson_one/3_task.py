@@ -1,9 +1,5 @@
-# 3 task
-john_name = 'John is good boy'
-marta_name = 'Marta is good girl'
+john_name = "John Dow"
+marta_name = "Marta Dow"
 
 print(john_name)
 print(marta_name)
-
-# Little bit strange name but it is OK
-# TODO: I prefer names like John, Marta, Mary and etc.

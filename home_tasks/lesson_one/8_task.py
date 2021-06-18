@@ -1,21 +1,19 @@
-# task 8
-
 john = {
-    'full_name': 'John',
-    'age': 24,
-    'salary': 1500,
-    'gender': True,
-    'friends': ['Addelyn', 'Jason', 'Maksim'],
-    'coordinates': (50.438905, 30.597014)
+    "full_name": "John",
+    "age": 24,
+    "salary": 1500,
+    "gender": True,
+    "friends": ["Addelyn", "Jason", "Maksim"],
+    "coordinates": (50.438905, 30.597014),
 }
 
 marta = {
-    'full_name': 'Marta',
-    'age': 21,
-    'salary': 750,
-    'gender': False,
-    'friends': ['Jennifer', 'William', 'Troy'],
-    'coordinates': (50.438905, 30.597014)
+    "full_name": "Marta",
+    "age": 21,
+    "salary": 750,
+    "gender": False,
+    "friends": ["Jennifer", "William", "Troy"],
+    "coordinates": (50.438905, 30.597014),
 }
 
 # Good but it could be described and printed in console in more elegant way:
@@ -64,14 +62,4 @@ marta = {
 # final result
 #
 for key, value in john.items():
-    print(f'{key} => {value}')
-
-
-
-
-
-
-# TODO: john_friends and marta friends should be some list with strings like in task 5 look on examples in usefull links for lesson 1 in LMS
-# TODO: john_coordinates and marta_coordinates should be some tuple like in task 7
-# Unfortunantly this script will not work
-# i fixed those problems
+    print(f"{key} => {value}")
