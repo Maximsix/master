@@ -53,3 +53,4 @@ toshiba_workers.insert(2, global_logic_workers[2])
 toshiba_workers.insert(3, global_logic_workers[3])
 print(toshiba_workers)
 
+# Excelent. Solution 4 is the most proper since global employees after absorbsion are employees of toshiba.

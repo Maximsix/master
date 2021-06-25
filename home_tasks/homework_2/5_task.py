@@ -16,9 +16,11 @@ hall_plases = {
 }
 
 
-vip_lodge = (vip_plases[1], vip_plases[2], vip_plases[3], vip_plases[4])
+vip_lodge = (vip_plases[1], vip_plases[2], vip_plases[3], vip_plases[4]) # over engineered
 
 common_hall = [hall_plases[1], hall_plases[2], hall_plases[3], hall_plases[4]]
+
+
 
 
 
@@ -42,9 +44,4 @@ def add_person(take_quantity) -> int:
 
 add_person(3)
 
-
-
-
-
-
-
+# you could define vip like ((1, "Johh Dow"), (2, "Marta Stuard"))

@@ -51,3 +51,7 @@ majong_blacklist = ['Alex Wallace','George Allen', 'Oscar Scott']
 result = bingno_blacklist + poker_blacklist + majong_blacklist
 
 print("Alex Wallace found =", bool(result.count('Alex Wallace')))
+
+# Not bad but list is not the best type for this task since you dont know which person.
+# You should use another type for this task.
+# Just imagen that you don't see this lists and know only that all peaple in list unique.

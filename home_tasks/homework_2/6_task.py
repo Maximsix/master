@@ -13,3 +13,6 @@ print(unique)
 
 # example 2
 print(list(frozenset(people)))
+
+# Good. Interesting solution but it could be done with dicts
+# print(list({}.fromkeys(people).keys()))
