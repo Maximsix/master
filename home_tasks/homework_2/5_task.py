@@ -1,9 +1,6 @@
-vip_plases = {
-    1: 'Maksim',
-    2: 'Alex',
-    3: 'Anthony',
-    4: 'Thomas'
-}
+# new structure
+vip_plases = ((1, 'Maksim'), (2, 'Alex'), (3, 'Anthony'), (4, 'Thomas'))
+
 
 hall_plases = {
     1: 'Alex',
@@ -16,7 +13,7 @@ hall_plases = {
 }
 
 
-vip_lodge = (vip_plases[1], vip_plases[2], vip_plases[3], vip_plases[4]) # over engineered
+# vip_lodge = (vip_plases[1], vip_plases[2], vip_plases[3], vip_plases[4]) # over engineered
 
 common_hall = [hall_plases[1], hall_plases[2], hall_plases[3], hall_plases[4]]
 

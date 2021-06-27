@@ -55,3 +55,13 @@ print("Alex Wallace found =", bool(result.count('Alex Wallace')))
 # Not bad but list is not the best type for this task since you dont know which person.
 # You should use another type for this task.
 # Just imagen that you don't see this lists and know only that all peaple in list unique.
+
+# new example one  after comment by my teacher
+bingno_blacklist = {'Tyler Beverly', 'William Ford', 'Alex Wallace'}
+poker_blacklist = {'Anthony Labert', 'Brandon Newman','Alex Wallace'}
+majong_blacklist = {'Alex Wallace','George Allen', 'Oscar Scott'}
+
+poker_blacklist.intersection(majong_blacklist, bingno_blacklist)
+print(poker_blacklist.intersection(majong_blacklist, bingno_blacklist))
+
+
