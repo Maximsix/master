@@ -29,7 +29,7 @@ def add_person(take_quantity) -> int:
     name = 0
     take_quantity = int(input('specify no more than 3 persons :'))
     for x in range(take_quantity):
-        name = input('enter the name of the guest :')
+        name = input('enter the name of the guest :')  # blocking operation inside function in syncronouse code it is not the best idea but good enought for demonstration
         for n in hall_plases:
             if hall_plases[n] == 'Free':
                 hall_plases[n] = name

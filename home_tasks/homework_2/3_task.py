@@ -64,4 +64,4 @@ majong_blacklist = {'Alex Wallace','George Allen', 'Oscar Scott'}
 poker_blacklist.intersection(majong_blacklist, bingno_blacklist)
 print(poker_blacklist.intersection(majong_blacklist, bingno_blacklist))
 
-
+# Good.
