@@ -10,7 +10,7 @@ sentences = re.split(r"\.[\s{2,10}\n\t]\.", text)
 sentence_list = []
 
 for sentence_index in sentences:
-     slpit_index = sentence_index.split('\n')
-     for x in slpit_index:
+     for x in sentence_index.split('\n'):
           sentence_list.append(x)
           print(x)
+print(sentence_list)
