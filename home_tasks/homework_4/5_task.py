@@ -8,9 +8,13 @@ text = """Многие думают, что Lorem Ipsum - взятый с пот
 Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32!"""
 sentences = re.split(r"\.[\s{2,10}\n\t]\.", text)
 sentence_list = []
-
+#
 for sentence_index in sentences:
      for x in sentence_index.split('\n'):
           sentence_list.append(x)
-          print(x)
+          print(f"<{x}>")
 print(sentence_list)
+# Interesting solution.  But take a look how it could be done in 1 line of code
+# sentences = re.findall("[А-Я].*?[.!](?=\n|$)", text)
+# for sentence in sentences:
+#      print(f"<{sentence}>")

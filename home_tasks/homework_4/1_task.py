@@ -9,3 +9,6 @@ print(names_list)
 # example 2
 new_names = ', '.join(names_list)
 print(new_names)
+
+# Good. take a look how it could be made in one line.
+# names.title()
