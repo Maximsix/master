@@ -1,7 +1,7 @@
 import re
 
 variable_list = ["FirstItem", "FriendsList", "MyTuple"]
-text_look_for = re.findall(r'[A-Z][a-z]',''.join(variable_list)) # This regular expression take only first Big letter and small after only 2 simbols
+text_look_for = re.findall(r'[A-Z]+[a-z]+',''.join(variable_list)) # This regular expression take only first Big letter and small after only 2 simbols
 snake_case_list = []
 counter1 = 0
 counter2 = 1
