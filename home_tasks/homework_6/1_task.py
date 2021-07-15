@@ -12,3 +12,4 @@ def arithmetic(left_operand: int, right_operand: int, operation: str):
     elif operation == '/':
         return left_operand / right_operand
     return f'Not known operation: {operation}'
+
