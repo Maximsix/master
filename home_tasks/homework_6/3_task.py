@@ -5,3 +5,6 @@ def search_prime_number(number):
         divider += 1
     return divider == number
 
+
+if __name__ == '__main__':
+    print(search_prime_number(11))
