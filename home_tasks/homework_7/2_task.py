@@ -14,4 +14,15 @@ def custom_map(callback: Callable, sequence):
     return type_sequence(keeper)
 
 if __name__ == '__main__':
-    print(custom_map(function_one, number_list))
+    john = {"name": "John", "age": 23, "gender": "Male"}
+    james = {"name": "James", "age": 12, "gender": "Male"}
+    marta = {"name": "Marta", "age": 56, "gender": "Female"}
+
+    print(custom_map(lambda n: n ** 2, [1, 4, 56, 7, 87]))
+    print(custom_map(lambda n: f"Hello {n}", ["James", "Marta", "John"]))
+    print(
+        custom_map(
+            lambda man: (man["name"], man["age"]),
+            [john, james, marta]
+        )
+    )

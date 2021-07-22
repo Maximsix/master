@@ -18,4 +18,7 @@ def custom_reduce(callback: Callable, sequence):
     return element
 
 if __name__ == '__main__':
-    print(custom_reduce(function_one, names_list))
+    print(custom_reduce(lambda a, b: a + b, [1, 2, 3, 4, 5]))
+    print(custom_reduce(lambda a, b: a if a > b else b, [1, 2, 3, 4, 5]))
+    print(custom_reduce(lambda a, b: a if a < b else b, [1, 2, 3, 4, 5]))
+    print(custom_reduce(lambda a, b: a + b, ["One", "Two"]))

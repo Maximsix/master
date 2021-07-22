@@ -16,4 +16,15 @@ def custom_filter(callback: Callable, sequence):
     return type_sequence(keeper)
 
 if __name__ == '__main__':
-    print(custom_filter(function_two, names_list))
+    john = {"name": "John", "age": 23, "gender": "Male"}
+    james = {"name": "James", "age": 12, "gender": "Male"}
+    marta = {"name": "Marta", "age": 56, "gender": "Female"}
+
+    print(custom_filter(lambda n: n > 5, [1, 4, 56, 7, 87]))
+    print(custom_filter(lambda n: n.startswith('J'), ["James", "Marta", "John"]))
+    print(
+        custom_filter(
+            lambda man: man["name"].startswith('J'),
+            [john, james, marta]
+        )
+    )
