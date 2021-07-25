@@ -1,9 +1,11 @@
 from typing import Union
 
-
 def output_called_function(func):
     def inner(*args, **kwargs):
-        return f'{func.__name__}\n{func(*args, **kwargs)}'
+        function_name = func.__name__
+        resalt_of_function = func(*args, **kwargs)
+        print(function_name)
+        return resalt_of_function
     return inner
 
 
@@ -21,6 +23,7 @@ def multiplication_of_numbers(number_one: Union[int, float], number_two: Union[i
 
 if __name__ == '__main__':
     print(5 + multiplication_of_numbers(1, 4))
+    print(shape_numbers(1, 3))
 
 # Well seems like your decorator brake main logic of function
 #     print(5 + multiplication_of_numbers(1, 4))
