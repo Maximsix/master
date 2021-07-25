@@ -8,3 +8,8 @@ def search_square_root_gen() -> Generator:
 
 for element in search_square_root_gen():
     print(element)
+
+# well it is OK but you are trying to return non blocking generator from
+# bocking function with synchronous code
+# Use generator comprehensions or generator functions
+# -2 points
