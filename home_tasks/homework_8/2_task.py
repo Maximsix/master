@@ -20,5 +20,9 @@ def multiplication_of_numbers(number_one: Union[int, float], number_two: Union[i
 
 
 if __name__ == '__main__':
-    print(shape_numbers(5, 12))
-    print(multiplication_of_numbers(1.0, 1))
+    print(5 + multiplication_of_numbers(1, 4))
+
+# Well seems like your decorator brake main logic of function
+#     print(5 + multiplication_of_numbers(1, 4))
+# TypeError: unsupported operand type(s) for +: 'int' and 'str'
+# -5 points
