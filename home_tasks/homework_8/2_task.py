@@ -28,4 +28,3 @@ if __name__ == '__main__':
 # Well seems like your decorator brake main logic of function
 #     print(5 + multiplication_of_numbers(1, 4))
 # TypeError: unsupported operand type(s) for +: 'int' and 'str'
-# -5 points
