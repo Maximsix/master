@@ -13,7 +13,7 @@ class Company:
                  company_type: str,
                  foundation_date: int,
                  company_website: str
-                 ) -> Union[str, int]:
+                 ) -> Union[str, int]: # constractoe should not return anything
         self.__company_name = company_name
         self.__ceo = ceo
         self.__address = address
@@ -100,3 +100,5 @@ if __name__ == '__main__':
         2008,
         'https://evo.company/'
     )
+# Well nice but no logic in this class only properties. I want to see methods with logic for changing state of object.
+# -2 points

@@ -14,7 +14,7 @@ class Employee:
                  company: str,
                  position: str,
                  salary: int
-                 ) -> Union[str, int, bool]:
+                 ) -> Union[str, int, bool]:  # constractor should not return anything
         self.__first_name = first_name
         self.__second_name = second_name
         self.__age = age
@@ -110,3 +110,6 @@ if __name__ == '__main__':
         'product manager',
         1000
     )
+
+# Good but no logic in this class
+# -2 points
