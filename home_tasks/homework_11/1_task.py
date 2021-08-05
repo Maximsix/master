@@ -136,3 +136,11 @@ if __name__ == '__main__':
     tesla_model_s = TeslaCar("Tesla model S", 'sedan', 100000, 2223)
 
 
+# Good but don't use static methods since send in them not active -2 poitns
+# I see abstraction and incapsulation in method
+#     def __quickly_pick_speed(self):
+#         print('quickly picks up speed to 100')
+#
+#     def speed(self):
+#         self.__quickly_pick_speed()
+# but it would be nice to see state modification instead of simple print of message -2 points
