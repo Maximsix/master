@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class ElectronicWork(ABC):
+class IElectronicWork(ABC):
 
     @abstractmethod
     def wait(self):

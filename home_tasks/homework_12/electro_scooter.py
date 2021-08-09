@@ -1,9 +1,9 @@
 
-from move import Move
-from electronic_work import ElectronicWork
+from imovable import IMovable
+from electronic_work import IElectronicWork
 
 
-class ElectroScooterBolt(Move, ElectronicWork):
+class ElectroScooterBolt(IMovable, IElectronicWork):
     def __init__(self):
         self.__wheels = 2
         self.__electric_motor = False
@@ -55,6 +55,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
             elif self.__paid == True:
                 print("please put on system")
 
+    # TODO: incorrect usage of static method
     @staticmethod
     def stop(self):
         if self.__start_system == True:
@@ -63,6 +64,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
         else:
             print('control does not work pay the trip')
 
+    # TODO: getter should not do anything just return value
     @property
     def complete_trip(self):
         if not self.__start_system:
@@ -72,6 +74,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
             self.__start_system = False
             print("trip finished have a nice day")
 
+    # TODO: getter should not do anything just return value
     @property
     def scooter_breake(self):
         if self.__start_system == True:
@@ -80,6 +83,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
         else:
             print('control does not work pay the trip')
 
+    # TODO: getter should not do anything just return value
     @property
     def charge(self):
         if self.__start_system == True:
@@ -91,6 +95,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
         else:
             print("the system is off, you can't see, please put on system")
 
+    # TODO: getter should not do anything just return value
     @property
     def check_kilometers(self):
         if self.__start_system == True:
@@ -102,7 +107,7 @@ class ElectroScooterBolt(Move, ElectronicWork):
 
 
 if __name__ == '__main__':
-        bolt = ElectroScooterBolt()
+    bolt = ElectroScooterBolt()
 
 
-
+# Good but propeties used incorrectly so -3 points

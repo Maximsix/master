@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Move(ABC):
+class IMovable(ABC):
 
     @abstractmethod
     def move(self):
