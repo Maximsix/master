@@ -1,4 +1,3 @@
-
 class Train:
     def __init__(self, locomotive_number: int, train_type: str, route: str):
         self.__locomotive_number = locomotive_number
@@ -8,6 +7,7 @@ class Train:
 
     def add_train_car(self, train_car: object):
         self.__train_cars.append(train_car)
+
     @property
     def __len__(self):
         return len(self.__train_cars)
