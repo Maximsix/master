@@ -1,7 +1,6 @@
-
 from cat import Cat
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cat = Cat("black", "Maine Coon", "John", 7)
     print(cat.name)
 

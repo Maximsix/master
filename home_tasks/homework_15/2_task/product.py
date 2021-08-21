@@ -4,6 +4,7 @@ from abc import ABC
 
 class GreenProduct(ABC):
     _name: str = ""
+
     def __init__(self):
         self.__product_type = None
         self.__taste = None

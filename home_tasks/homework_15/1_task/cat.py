@@ -1,5 +1,5 @@
-
 from singolton import singolton
+
 
 @singleton
 class Cat:
@@ -24,4 +24,3 @@ class Cat:
     @property
     def age(self):
         return self.__age
-
