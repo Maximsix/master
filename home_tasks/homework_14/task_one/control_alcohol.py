@@ -17,3 +17,4 @@ class ControlAlcohol:
             instance.__dict__[self.__age] = self.__value
 
 
+# Well nice but not related to homework) -2 points
