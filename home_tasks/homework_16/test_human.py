@@ -120,3 +120,6 @@ def test_return_age(human):
     This test check return private attribute age
     """
     assert human.age == 18
+
+# in tests for change gender no mock but should be
+# I see some tests without mocks at all
