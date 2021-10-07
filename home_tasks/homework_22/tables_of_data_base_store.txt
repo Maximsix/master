@@ -1,0 +1,42 @@
+ store=# select name, price, quontity, quontity*price as total from products
+ inner join orders on products.id = orders.product_id;
+
+          name          | price | quontity | total
+------------------------+-------+----------+-------
+ Jim beam white 1 litre |   550 |        2 |  1100
+ Jim beam white 1 litre |   550 |        3 |  1650
+ Jim beam white 1 litre |   550 |        5 |  2750
+ packet of tobacco      |   343 |        1 |   343
+ Jim beam white 1 litre |   550 |        5 |  2750
+ packet of tobacco      |   343 |        2 |   686
+ Jim beam white 1 litre |   550 |        1 |   550
+ packet of tobacco      |   343 |        1 |   343
+ pepsi, 0.5             |    17 |        1 |    17
+ pepsi, 0.5             |    17 |        2 |    34
+(10 rows)
+
+
+store=# select * from orders;
+ id | product_id | quontity
+----+------------+----------
+ 1  | aaaaaaaa   |        2
+ 2  | aaaaaaaa   |        3
+ 3  | aaaaaaaa   |        5
+ 4  | bbbbbbbb   |        1
+ 5  | aaaaaaaa   |        5
+ 6  | bbbbbbbb   |        2
+ 7  | aaaaaaaa   |        1
+ 8  | bbbbbbbb   |        1
+ 9  | nnnnnnnn   |        1
+ 10 | nnnnnnnn   |        2
+(10 rows)
+
+
+
+store=# select * from products;
+
+    id    |          name          | price
+----------+------------------------+-------
+ aaaaaaaa | Jim beam white 1 litre |   550
+ bbbbbbbb | packet of tobacco      |   343
+ nnnnnnnn | pepsi, 0.5             |    17
