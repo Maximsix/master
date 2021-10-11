@@ -1,55 +1,65 @@
-# task with star
-
-# dict friends for John and Marta
-
-addelyn = {'full_name': 'Addelyn',
-        'age': 19,
-        'salary': 400,
-        'gender': False,
-        'friends': marta['full_name'],
-        'coordinates':(50.433305,30.590004)
-           }
-
-jason = {'full_name': 'Jason',
-        'age': 29,
-        'salary': 340,
-        'gender': True,
-        'friends': john['full_name'],
-        'coordinates':(50.466605,30.509604)
-         }
+william = {
+    "full_name": "William",
+    "age": 22,
+    "salary": 1345,
+    "gender": True,
+    "friends": None,
+    "coordinates": (50.466605, 30.509604),
+}
 
 
-william = {'full_name': 'William',
-        'age': 22,
-        'salary': 1345,
-        'gender': True,
-        'friends': john['full_name'],
-        'coordinates':(50.466605,30.509604)
-           }
+addelyn = {
+    "full_name": "Addelyn",
+    "age": 19,
+    "salary": 400,
+    "gender": False,
+    "friends": [william],
+    "coordinates": (50.433305, 30.590004),
+}
 
-jennifer = {'full_name': 'Jennifer',
-        'age': 23,
-        'salary': 3000,
-        'gender': False,
-        'friends': marta['full_name'],
-        'coordinates':(50.412305,30.590984)
-        }
 
-# update dict friends key value
-john = {'full_name': 'John',
-        'age': 24,
-        'salary': 1500,
-        'gender': True,
-        'coordinates': john_coordinates,
-        'friends': [william, jason]
-         }
+john = {
+    "full_name": "John",
+    "age": 24,
+    "salary": 1500,
+    "gender": True,
+    "coordinates": (50.438905, 30.597014),
+    "friends": [addelyn, william],
+}
 
-marta = {'full_name': 'Marta',
-        'age': 21,
-        'salary': 750,
-        'gender': False,
-        'coordinates': john_coordinates,
-        'friends': [jennifer, addelyn]
-         }
-print(marta)
-print(john)
+
+jason = {
+    "full_name": "Jason",
+    "age": 29,
+    "salary": 340,
+    "gender": True,
+    "friends": [john],
+    "coordinates": (50.466605, 30.509604),
+}
+
+
+jennifer = {
+    "full_name": "Jennifer",
+    "age": 23,
+    "salary": 3000,
+    "gender": False,
+    "friends": [john],
+    "coordinates": (50.412305, 30.590984),
+}
+
+
+marta = {
+    "full_name": "Marta",
+    "age": 21,
+    "salary": 750,
+    "gender": False,
+    "coordinates": (50.438905, 30.597014),
+    "friends": [jennifer, addelyn],
+}
+
+
+for key, value in john.items():
+    print(f"{key} => {value}")
+
+for key, value in marta.items():
+    print(f"{key} => {value}")

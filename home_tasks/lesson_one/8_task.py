@@ -1,20 +1,65 @@
-# task 8
+john = {
+    "full_name": "John",
+    "age": 24,
+    "salary": 1500,
+    "gender": True,
+    "friends": ["Addelyn", "Jason", "Maksim"],
+    "coordinates": (50.438905, 30.597014),
+}
 
-john = {'full_name': 'John',
-        'age': 24,
-        'salary': 1500,
-        'gender': True,
-        'friends': john_friends,
-        'coordinates': john_coordinates
-        }
+marta = {
+    "full_name": "Marta",
+    "age": 21,
+    "salary": 750,
+    "gender": False,
+    "friends": ["Jennifer", "William", "Troy"],
+    "coordinates": (50.438905, 30.597014),
+}
 
-marta = {'full_name': 'Marta',
-        'age': 21,
-         'salary': 750,
-        'gender': False,
-        'friends': marta_friends,
-        'coordinates': john_coordinates
-         }
+# Good but it could be described and printed in console in more elegant way:
+# john = {
+#     "first_name": "John",
+#     "last_name": "Smith",
+#     "age": 25,
+#     "gender": "male",
+#     "parents": ["John Smith Junio", "Marta Smith"]
+# }
+# Look on how dict is described. It is more preferable view on real projects.
+# print(john)
+# Thank's for advice
+#
+# for key, value in john.items():
+#     # print(key, value, sep=" => ")
+#     print(f"{key} => {value}")
 
-print(john)
-print(marta)
+# I tried this option number one
+# def output_information(some_dict) -> dict:
+#     for key, value in some_dict.items():
+#          print("{} => {}".format(key, value))
+#
+# output_information(john)
+# output_information(marta)
+#
+#
+#
+# I tried this option number two, it was fun
+#
+# def output_information(some_dict) -> dict:
+#     for key, value in some_dict.items():
+#         for substring in str(key):
+#             if substring == "_":
+#                 str_key = str(key).replace(substring, " ")
+#                 break
+#             elif not '_' in key:
+#                 str_key = key
+#                 break
+#         print('%s => %s' % (str_key, value))
+#
+# output_information(john)
+# output_information(marta)
+#
+#
+# final result
+#
+for key, value in john.items():
+    print(f"{key} => {value}")

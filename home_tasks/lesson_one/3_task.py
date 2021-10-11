@@ -1,6 +1,5 @@
-# 3 task
-john_name = 'john is good boy'
-marta_name = 'marta is good girl'
+john_name = "John Dow"
+marta_name = "Marta Dow"
 
 print(john_name)
 print(marta_name)
