@@ -33,19 +33,25 @@ class Movie:
                 for child_tag in mov:
                     info_box.append(child_tag)
                 movies.append(cls(mov.attrib["title"],
-                    info_box[0],
-                    info_box[1],
-                    info_box[2],
-                    info_box[3],
+                    info_box[0].text,
+                    info_box[1].text,
+                    info_box[2].text,
+                    info_box[3].text,
                     genr.attrib['category']
                     ))
                 del info_box[:]
         return movies
 
+    def __str__(self):
+        data = ""
+        for key, value in self.__dict__.items():
+            data += f"\t{key}: {value}\n"
+        return f"{{\n{data[:len(data) - 1]}\n}}"
+
 
 
 if __name__ == '__main__':
-    movies_list = Movie.from_xml("movie.xml")
-    print(len(movies_list))
+    for movie in Movie.from_xml("movie.xml"):
+        print(movie)
 
 
