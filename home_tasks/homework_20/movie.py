@@ -33,10 +33,10 @@ class Movie:
                 for child_tag in mov:
                     info_box.append(child_tag)
                 movies.append(cls(mov.attrib["title"],
-                    info_box[0].text,
-                    info_box[1].text,
-                    info_box[2].text,
-                    info_box[3].text,
+                    info_box[0],
+                    info_box[1],
+                    info_box[2],
+                    info_box[3],
                     genr.attrib['category']
                     ))
                 del info_box[:]
